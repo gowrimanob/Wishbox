@@ -1,14 +1,25 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './HeroSection/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './HeroSection/Home'
 
 function App() {
- 
+
   return (
     <>
-    <h1>First Project in REACT</h1>
-     
+    <Navbar/>
+
+    <Routes>
+      <Route path='/' element={<Home/>}  />
+    </Routes>
+    
     </>
   )
 }
 
 export default App
+
+
+
+
